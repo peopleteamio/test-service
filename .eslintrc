@@ -1,0 +1,17 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "extends": ["eslint:recommended", "prettier"],
+  "plugins": ["prettier", "jest", "unused-imports", "simple-import-sort"],
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "no-console": "error",
+    "no-duplicate-imports": "error",
+    "unused-imports/no-unused-imports": "error",
+    "simple-import-sort/imports": "error"
+  }
+}

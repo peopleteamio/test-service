@@ -1,0 +1,37 @@
+# Ignore build output
+
+dist
+
+# Ignore node_modules directory
+
+node_modules
+
+# Ignore environment variables file
+
+.env
+
+# Ignore formatting related files
+
+.eslintignore
+.eslintrc
+.prettierignore
+.prettierrc
+
+# Ignore git related directories and files
+
+.git
+.gitignore
+.github
+
+# Ignore markdown files
+
+\*.md
+
+# Ignore nodemon file
+
+nodemon.json
+
+# Ignore testing related files
+
+jest.config.js
+\*.spec.ts

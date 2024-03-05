@@ -1,0 +1,11 @@
+name: CI - Release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  containerize:
+    name: Containerize
+    uses: ./.github/workflows/containerize.yml
+    secrets: inherit

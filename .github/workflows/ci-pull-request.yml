@@ -1,0 +1,23 @@
+name: CI - Pull Request
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  format:
+    name: Format
+    uses: ./.github/workflows/format.yml
+    secrets: inherit
+
+  test:
+    name: Test
+    needs: format
+    uses: ./.github/workflows/test.yml
+    secrets: inherit
+
+  build:
+    name: Build
+    needs: test
+    uses: ./.github/workflows/build.yml
+    secrets: inherit
